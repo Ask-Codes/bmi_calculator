@@ -1,0 +1,12 @@
+# Create  Body Mass Index (BMI) calculator\n",
+weight = float(input(\"Weight(kg): \")) # float function to take care of decimals
+height = float(input(\"Height(m2): \")) # input to enable individuals insert their weight and height
+bmi = round(weight/(height*height), 2) # round function returns a 2 decimal place of the outcome from bmi calculation
+print("Your Body Mass Index (BMI) = " + str(bmi) + " kg/m2\")
+if bmi >= 25:
+    print(f\"A BMI of {bmi}kg/m2 is considered overweight")
+elif bmi >= 18.5 or not 25:
+print(f\"A BMI of {bmi}kg/m2 is considered normal")
+    else:
+print(f\"A BMI of {bmi}kg/m2 is considered underweight")
+
